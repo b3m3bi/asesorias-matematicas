@@ -1,0 +1,166 @@
+
+    <h3 class="title">Productos notables y factorización</h3>
+
+    <!-- <img src="https://media.giphy.com/media/TgKEjjz1lzjmEsuz80/giphy.gif" alt="Feliz"> -->
+
+    <h4>Introducción</h4>
+
+    <p>En esta sesión vamos a repasar dos temas que seguro vendrán en tu examen: <b>los productos notables</b> y <b>la factorización.</b></p>
+
+    <div class="alert alert-danger">
+      <h5><fa-icon [icon]="faBook"></fa-icon> Instrucciones:</h5>
+      <p>Lee todo el contenido de esta página, ve los videos y copia en tu cuaderno lo que se te pide.</p>
+    </div>
+
+    <div class="alert alert-warning">
+      <h5><fa-icon [icon]="faExclTri"></fa-icon> Aviso:</h5>
+      <p>Antes de comenzar debes de tener claros los siguientes temas:</p>
+      <ul>
+        <li>suma y resta de polinomios</li>
+        <li>multiplicación de polinomios</li>
+      </ul>
+    </div>
+
+
+    <h4>Productos notables</h4>
+    <p>Recurda que en la multiplicación de polinomios tienes que multiplicar cada uno de los términos de un polinomio por cada uno de los términos del otro polinomio como en el siguiente ejemplo:</p>
+    <img src="../../../../assets/multiplicacion-poli.png" alt="Ejemplo de multiplicación de polinomios" class="imagen">
+    <p>Este procedimiento puede hacer que la multiplicación de polinomios sea muy tardada. No obstante, existen casos particulares en los que el resultado de la multiplicación de polinomios sigue siempre un mismo partón por lo que en lugar de resolver la multiplicación paso por paso podemos solo aplicar una regla y obtener rápidamente el resultado. Estos casos particulares se conocen como <strong>productos notables</strong>. Para aprender más de ellos ve el siguiente video:</p>
+
+    <div class="ratio ratio-16x9 mb-3">
+      <iframe [src]="url1" allowfullscreen></iframe>
+    </div>
+
+    <p>Ahora copia en tu cuaderno lo siguiente que resume lo que acabas de ver en el video:</p>
+
+
+    <div class="alert alert-secondary">
+      <h5> <fa-icon [icon]="faPencilAlt"></fa-icon> Copiar: </h5>
+      <div class="copiar">
+      <h6> Productos notables</h6>
+
+      <p>Los <strong>productos notables</strong> son aquellos productos de algunos polinomios que como siempre cumplen cierto partrón fijo y que se pueden resolver aplicando ciertas reglas.</p>
+
+      <table class="table table-hover table-stripped bg-white">
+        <thead class="table-dark">
+          <tr>
+            <th>#</th>
+            <th>Nombre</th>
+            <th>Producto notable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td> Binomio al cuadrado </td>
+            <td><ng-katex [equation]="'  (a+b)^{2}=a^{2}+2ab+b^{2}  '"></ng-katex> </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td> Binomio conjudado </td>
+            <td><ng-katex [equation]="'  (a+b)(a-b) = a^{2}-b^{2}  '"></ng-katex> </td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td> Binomio con término común </td>
+            <td><ng-katex [equation]="'  (x+a)(x+b)=x^{2}+(a+b)x+ab  '"></ng-katex></td>
+          </tr>
+          <!-- <tr>
+            <td>4</td>
+            <td> Binomios al cubo </td>
+            <td><ng-katex [equation]="'  (a+b)^{3}=a^{3}+3a^{2}b+3ab^{2}+b^{3}  '"></ng-katex> </td>
+          </tr> -->
+        </tbody>
+      </table>
+      </div>
+    </div>
+
+    <div class="alert alert-info">
+      <h5><fa-icon [icon]="faLightbulb"></fa-icon> Recordatorio:</h5>
+      <p>Como se explica en el video, no es necesario que te aprendas las reglas de los productos notables de memoria. Si sabes multiplicar polinomios puedes resolver cualquier ejercicio de productos notables. Así que asegurate de saber muy bien como multiplicar polinomios. Donde los productos notables nos van a ser muy útiles es para factorizar.</p>
+    </div>
+
+    <!-- <p>Recuerda muy bien nunca equivocarte con los binomios al cuadrado:</p> -->
+    <!-- <img src="../img/meme-productos-notables.jpg" alt="Meme porductos notables" class="" style="width:600px">
+    <img src="../img/meme-productos-notables-2.jpg" alt="Meme porductos notables" class=""> -->
+
+
+    <h4>Factorización</h4>
+
+    <p>Nota que cuando resolvemos una multiplicación de polinomios o cuando resolvemos porductos notables empezamos con dos o más polinomios que se multiplican y terminamos con una suma de términos algebraicos.</p>
+    <img src="../../../../assets/explicacion-multip-poli.png" alt="Explicación de la multiplicación de polinomios" class="imagen">
+    <p>El proceso contrario a la multipliación de polinomios, es decir, cuando empezamos con una suma de términos algebraicos y terminamos con una multiplicación de polinomios, se conoce como <strong>factorización</strong>. </p>
+    <img src="../../../../assets/explicacion-factorizacion.png" alt="Explicación de la multiplicación de polinomios" class="imagen">
+
+    <p>Existen muchos métodos para factorizar. En los siguientes videos aprenderemos sobre algunos de los más importantes.</p>
+
+    <h5>Factor común</h5>
+    <p>El factor común consiste en identificar qué tienen en común los polinomios y aplicar la propiedad distributiva (pero de regreso).</p>
+    <div class="ratio ratio-16x9">
+      <iframe [src]="url2" allowfullscreen></iframe>
+    </div>
+
+    <h5 class="mt-4">Factorización de una diferencia de cuadrados</h5>
+    <p>Los siguientes tres métodos están intimamente relacionados con los productos notables. Para resolverlos sólo tienes que identificar los elementos de la expresión y rescribir todo como una multiplicación de polinomios de acuerdo al producto notable que representan.</p>
+
+    <p>El primero de estos es la <b>factorización de una diferencia de cuadrados</b> y  corresponde al caso contrario de los binomios conjugados.</p>
+    <div class="ratio ratio-16x9">
+      <iframe [src]="url3" allowfullscreen></iframe>
+    </div>
+
+    <h5 class="mt-4">Factorización de trinommios cuadrados perfectos</h5>
+    <p>El segundo es la <b>factorización de los trinomios cuadrados perfectos</b> y corresponde al caso contrario de los binomios al cuadrado.</p>
+    <div class="ratio ratio-16x9">
+        <iframe [src]="url4" allowfullscreen></iframe>
+    </div>
+    
+    <h5 class="mt-4">Factorización de trinomios de la forma <ng-katex [equation]="'  x^{2}+bx+c  '"></ng-katex></h5>
+    <p>Finalmente, el tercero es la <b>factorización de los trinomios de la forma <ng-katex [equation]="'  x^{2}+bx+c  '"></ng-katex></b> y corresponde al caso contrario de los binomios con término común.</p>
+    <div class="ratio ratio-16x9">
+      <iframe [src]="url5" allowfullscreen></iframe>
+    </div>
+
+    <p class="mt-4">Ahora copia en tu cuaderno los siguiente que resume lo que acabas de ver.</p>
+
+    <div class="alert alert-secondary">
+      <h5> <fa-icon [icon]="faPencilAlt"></fa-icon> Copiar: </h5>
+      <div class="copiar">
+      <h6>Factorización</h6>
+      <p>La <strong>factorización</strong> es el porceso algebraico en el que transformamos una suma de términos algebraicos en un producto de monomios y/o polinomios.</p>
+      <p>Existen varios métodos de factorización:</p>
+      <ol>
+        <li>
+          <b>Factor común</b>
+          <p>Se identifica la literal o literales que comparten todos los términos y se identifica el máximo común divisor (MCD) de los coeficientes.</p>
+        </li>
+        <li>
+          <b>Diferencia de cuadrados </b>
+          <p> Tiene la forma <ng-katex [equation]="'  a^{2} - b^{2} '"></ng-katex> y su factorización es el producto de binomios conjugados: <ng-katex [equation]="' a^{2}+b^{2} = (a+b)(a-b)  '"></ng-katex>.</p>
+        </li>
+        <li>
+          <b>Trinomio cuadrado perfecto</b>
+          <p> Tiene la forma <ng-katex [equation]="'  a^{2}+2ab+b^{2} '"></ng-katex> y su factorización es el producto de binomios al cuadrado: <ng-katex [equation]="' a^{2}+2ab+b^{2} = (a+b)^{2}  '"></ng-katex>.</p>
+        </li>
+        <li>
+          <b> Trinomio de la forma <ng-katex [equation]="'  x^{2}+cx+d  '"></ng-katex> </b> 
+          <p> Tiene la forma <ng-katex [equation]="'  x^{2}+cx+d '"></ng-katex> y su factorización es el producto de binomios con término común: <ng-katex [equation]="' x^{2}+cx+ab = (x+a)(x+b) \), donde \( c = a+b \) y \( d = ab  '"></ng-katex> .</p>
+        </li>
+      </ol>
+    </div>
+    </div>
+
+    <h4>Fin</h4>
+
+    <div class="alert alert-danger">
+      <h5><fa-icon [icon]="faBook"></fa-icon> Instrucciones:</h5>
+        <p>Regresa a <i>Google Classroom</i> y contesta los ejercicios de esta sesión. Y entrega lo que se pide. Puedes poner <a href="https://www.youtube.com/watch?v=t6FUR_nhGX8">esta canción</a> mientras haces tus ejericios.</p>
+    </div>
+
+    <div class="alert alert-warning">
+      <h5><fa-icon [icon]="faExclTri"></fa-icon> Aviso:</h5>
+      Para complementar lo que viste en esta sesión <strong>revisa tu Guía</strong>. Los temas que debes revisar están en las páginas 107 a 113.
+    </div>
+
+    <!-- <img src="../img/particio-meme.png" alt="Entendiste wii"> -->
+
+    <!-- <img src="https://media.giphy.com/media/izyRTIOzU07dtJF2u7/giphy.gif" alt="meh!"> -->

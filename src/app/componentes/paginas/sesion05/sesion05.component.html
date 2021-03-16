@@ -1,0 +1,181 @@
+
+    <h3 class="title">Leyes de los exponentes y multiplicación de polinomios</h3>
+
+    <h4>Introducción</h4>
+
+    <div class="alert alert-danger">
+      <h5><fa-icon [icon]="faBook"></fa-icon> Instrucciones:</h5>
+      <p>Lee todo el contenido de esta página, ve los videos y copia lo que se te pide en tu cuaderno.</p>
+    </div>
+
+    <div class="alert alert-warning">
+      <h5><fa-icon [icon]="faExclTri"></fa-icon> Aviso:</h5>
+      <p>Antes de comenzar asegurate tener bien claros los siguientes conceptos:</p>
+      <ul>
+        <li>término,</li>
+        <li>coeficiente,</li>
+        <li>variable o literal,</li>
+        <li>exponente y</li>
+        <li>monomio, binomio, trinomio y polinomio.</li>
+      </ul>
+      <p>Además repasa cómo hacer sumas y restas de polinomios.</p>
+    </div>
+
+
+      <p>En esta sesión vamos a repasar los siguients temas:</p>
+
+      <ul>
+        <li><strong>Leyes de los exponentes</strong></li>
+        <li>Grado de un polinomios</li>
+        <li>Propiedad distributiva</li>
+        <li><strong>Multiplicación de polinomios</strong></li>
+      </ul>
+
+    <h4>Leyes de los exponentes</h4>
+
+    <p>Las leyes de los exponentes son un conjunto de reglas que nos idican como debemos resolver operaciones con potencias. Ve el siguiente video:</p>
+
+    <div class="ratio ratio-16x9 mb-3">
+      <iframe [src]="url1" allowfullscreen></iframe>
+    </div>
+
+    <p>Después de ver el video copia en tu cuaderno la siguiente tabla que resume lo que acabas de ver:</p>
+
+    <div class="alert alert-secondary">
+      <h5> <fa-icon [icon]="faPencilAlt"></fa-icon> Copiar: </h5>
+      <div class="copiar">
+        <h6>Leyes de los exponentes</h6>
+      <div class="table-responsive">
+          <table class="table table-hover table-striped bg-white">
+            <thead class="table-dark">
+              <tr>
+                <th scope="col">Ley</th>
+                <th scope="col">Ejemplo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr scope="row">
+                <td><ng-katex [equation]="' a^{n} \\cdot a^{m} = a^{n+m} '"></ng-katex></td>
+                <td><ng-katex [equation]="' 3^{2} \\cdot 3^{3} = 3^{2+3} '"></ng-katex></td>
+              </tr>
+              <tr scope="row">
+                <td><ng-katex [equation]="' \\frac{a^{m}}{a^{n}} = a^{m-n} '"></ng-katex></td>
+                <td><ng-katex [equation]="' \\frac{5^{2}}{5^{4}} = 5^{2-4} '"></ng-katex></td>
+              </tr>
+              <tr scope="row">
+                <td><ng-katex [equation]="' a^{-n} = \\frac{1}{ a^{n} } '"></ng-katex></td>
+                <td><ng-katex [equation]="' 3^{-2} = \\frac{1}{ 3^{2} } '"></ng-katex></td>
+              </tr>
+              <tr scope="row">
+                <td><ng-katex [equation]="' a^{0} = 1 '"></ng-katex></td>
+                <td><ng-katex [equation]="' 12^{0} = 1 '"></ng-katex></td>
+              </tr>
+              <tr scope="row">
+                <td><ng-katex [equation]="' (a^{n})^{m} = a^{n \\cdot m} '"></ng-katex></td>
+                <td><ng-katex [equation]="' (2^{3})^{4} = 2^{3 \\cdot 4} '"></ng-katex></td>
+              </tr>
+              <tr scope="row">
+                <td><ng-katex [equation]="' (\\frac{a}{b})^{n}  = \\frac{a^{n}}{b^{n}} '"></ng-katex></td>
+                <td><ng-katex [equation]="' (\\frac{4}{5})^{2}  = \\frac{4^{2}}{5^{2}} '"></ng-katex></td>
+              </tr>
+            </tbody>
+          </table>
+  
+      </div> 
+      </div>
+
+    </div>
+
+    <h4>Grado de un monomio y de un polinomio</h4>
+
+    <p>Cópia las siguientes definiciones en tu cuaderno.</p>
+    
+    <div class="alert alert-secondary copiar">
+      <h5> <fa-icon [icon]="faPencilAlt"></fa-icon> Copiar: </h5>
+      <h6>Grado de un monomio y de un polinomio</h6>
+      <p>El <u><b>grado de un monomio</b></u> es la suma de sus exponentes.</p>
+      <p>Ejemplo:</p>
+
+      <div class="table-responsive">
+          <table class="table table-hover table-striped bg-white">
+            <thead class="table-dark">
+            <tr>
+              <th>Monomio</th>
+              <th>Exponentes</th>
+              <th>Grado <small>(suma de los exponentes)</small></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><ng-katex [equation]="'  -3x^{2}  '"></ng-katex> </td>
+              <td><ng-katex [equation]="'  2  '"></ng-katex> </td>
+              <td><ng-katex [equation]="'  2  '"></ng-katex> (monomio de segundo grado) </td>
+            </tr>
+            <tr>
+              <td><ng-katex [equation]="'  12a^{3}b^{5}  '"></ng-katex></td>
+              <td><ng-katex [equation]="' 3, 5 '"></ng-katex></td>
+              <td><ng-katex [equation]="' 3 + 5 = 8 '"></ng-katex> (monomio de grado 8)</td>
+            </tr>
+            <tr>
+              <td><ng-katex [equation]="'  3n^{4}m^{-1}  '"></ng-katex></td>
+              <td><ng-katex [equation]="' 4, -1 '"></ng-katex> </td>
+              <td><ng-katex [equation]="' 4 + (-1) = 3 '"></ng-katex> (monomio de grado 3)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    <p class="mt-4">El <u><b>grado de un polinomio</b></u> es igual al máximo de los grados de los monomios que lo componen. Para encontrar el grado de un polinomio tenemos que calcular el grado de cada uno de sus términos o monomios y seleccionar el mayor de entre estos.</p>
+    <p>Ejemplo:</p> 
+    <p>El polinomio <ng-katex [equation]="'  3x^{2} - 5x^{7} + 3  '"></ng-katex>, tiene 3 términos cuyos grados son: 2, 7 y 0, respectivamente. El mayor de estos grados es 7, por lo tanto el polinomio es de grado 7.</p>
+
+    </div>
+
+    <h4>Propiedad distributiva</h4>
+
+    <p>La porpiedad distributiva es fundamental en el álgebra. Ve el siguiente video:</p>
+
+
+    <div class="ratio ratio-16x9 mb-3">
+      <iframe [src]="url2" allowfullscreen></iframe>
+    </div>
+
+    <p>Listo. Ahora esamos listos para ver la Multiplicación de polinomios.</p>
+
+
+    <!-- <img style="width: 300px" class="img-fluid rounded m-3" src="https://media.giphy.com/media/xTiN0CNHgoRf1Ha7CM/giphy.gif" alt="niña emocionada"> -->
+
+    <h4>Multiplicación de polinomios</h4>
+
+    <p>Para realizar la multiplicación de polinomios tendrás que aplicar <i>las leyes de los signos</i>, <i>las leyes de los exponentes</i>, <i>términos semejantes</i> y <i>la propiedad distributiva</i>. Es decir, vamos a utilizar todo lo que haz visto hasta el momento. Es muy divertido. Compruébalo en el siguente video:</p>
+
+    <div class="ratio ratio-16x9">
+      <iframe [src]="url3" allowfullscreen></iframe>
+    </div>
+
+
+    <h4>Fin</h4>
+
+    <div class="alert alert-danger">
+      <h5><fa-icon [icon]="faBook"></fa-icon> Instrucciones:</h5>
+      <p>Regresa a <i>Google Classrom</i> y contesta los ejercicios de esta sesión. Puedes poner <a href="https://www.youtube.com/watch?v=SkgTxQm9DWM" title="Una canción bien chida">esta canción</a> mientras haces tus ejercicos.</p>
+    </div>
+
+    <div class="alert alert-warning">
+      <h5><fa-icon [icon]="faExclTri"></fa-icon> Aviso:</h5>
+      <p>Para complementar lo que viste en el video <strong>revisa tu Guía</strong>. Los temas que debes revisar están en las páginas 94 a 96 y son los siguientes:</p>
+      <ul>
+        <li>Multiplicación de polinomios</li>
+        <li>Monomio por monomio</li>
+        <li>Monomio por polinomio</li>
+        <li>Polinomio por polinomio</li>
+      </ul>
+
+    </div>
+    <!-- <img  style="width: 300px" class="img-fluid rounded m-3" src="../img/memes-examen-no-opciones.jpg" alt=""> -->
+
+    <div class="alert alert-info">
+      <h5><fa-icon [icon]="faLightbulb"></fa-icon> Extra:</h5>
+      <p>Otro tema que puedes repasar es la <strong>división de polinomios</strong>. Para ellos puedes ver <a href="https://www.youtube.com/watch?v=XYNruwyOY_s" title="División de polinomios">este video</a> y revisar las páginas 97 a 100 de tu Guía. Este tema casi no viene en tu examen, pero si lo entiendes serás el más popular de tu escuela.</p>
+    </div>
+

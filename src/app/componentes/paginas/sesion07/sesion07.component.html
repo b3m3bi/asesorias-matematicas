@@ -1,0 +1,255 @@
+
+        <h3 class="title">Sistemas de ecuaciones lineales</h3>
+
+        <img style="width: 300px; display: block; margin: auto;" src="https://media.giphy.com/media/APqEbxBsVlkWSuFpth/giphy.gif" alt="">
+
+        <h4>Introducción</h4>
+        <p>En esta sesión vamos a repasar los siguientes tres temas:</p>
+        <ul>
+            <li>Despejes</li>
+            <li>Ecuaciones de primer grado</li>
+            <li>Sistemas de ecuaciones lineales</li>
+        </ul>
+
+    <div class="alert alert-danger">
+      <h5><fa-icon [icon]="faBook"></fa-icon> Instrucciones:</h5>
+      <p>Lee todo el contenido de esta página, ve los videos y copia lo que se te pide en tu cuaderno.</p>
+    </div>
+
+
+    <h4>Despejes</h4>
+    
+    <p>Primero te dejo un video para que repases los despejes. <b>Aprender a despejar bien es una habilidad muy importante en matemáticas</b>. Si aprendes muy bien a despejar después podrás solucionar casi cualquier ejercico de matemáticas.</p>
+
+    <div class="ratio ratio-16x9">
+      <iframe [src]="url1" allowfullscreen></iframe>
+    </div>
+    <h4>Ecuaciones de primer grado</h4>
+    <p class="mt-4">Ahora te dejo un video sobre cómo resolver ecuaciones de primer grado.</p>
+
+    <div class="ratio ratio-16x9">
+        <iframe [src]="url2" allowfullscreen></iframe>
+    </div>
+
+        <p class="mt-4">Muy bien, ya que repasaste cómo se despeja y resuelve una ecuación de primer grado vamos a repasar cómo resolver los sistemas de ecuaciones lineales.</p>
+
+        <h4>Sistemas de ecuaciones lineales</h4>
+
+        <p>¿Qué son los sistemas de ecuaciones lineales? Este es un tema que de seguro ya conoces. ¿Te suena familiar el siguiente tipo de problemas?</p>
+
+        <div class="alert alert-success">
+            <p> <b>Problema:</b> ¿Cuál es el número de conejos y gallinas en un corral si en su conjunto hacen un total de 15 cabezas y 40 patas?</p>
+        </div>
+
+        <p>Este tipo de problemas (que de seguro vendrán en tu examen) se resuelven utilizando sistemas de ecuaciones lineales. Más adelante veremos cómo resolver este problema. Primero veamos qué es y cómo se resuelve un sistema de ecuaciones.</p>
+
+        <p>Un sistema de ecuaciones simplemente es un conjunto de ecuaciones que comparten las mismas variables, por ejemplo:</p>
+        <p class="text-center">
+            <ng-katex [equation]="' \\begin{cases} 2x-y=4 \\\\ 3x+2y=13 \\end{cases} '"></ng-katex>
+        </p>
+
+        <p>Decimos que estas son ecuaciones <b>lineales</b> o <b>de primer grado</b> por que son polinomios de primer grado, es decir sus variables tiene exponente 1.</p>
+
+        <p>Existen muchos métodos para resolver sistemas de ecuaciones lineales. Repasaremos dos de ellos en los siguientes videos.</p>
+
+        <p>El primer método que vamos a repasar es el <b>método de reducción o eliminación</b>.</p>
+        <div class="ratio ratio-16x9">
+          <iframe [src]="url3" allowfullscreen></iframe>
+        </div>
+
+        <p class="mt-4">El segundo método que vamos a repasar es el <b>método de sustitución</b>.</p>
+        <div class="ratio ratio-16x9">
+          <iframe [src]="url4" allowfullscreen></iframe>
+        </div>
+    
+        <p class="mt-4">Ahora copia en tu cuadernon los siguiente que resume lo que acabas de ver:</p>
+
+    <div class="alert alert-secondary">
+      <h5> <fa-icon [icon]="faPencilAlt"></fa-icon> Copiar: </h5>
+      <div class="copiar">
+
+          <h6>Sistemas de ecuaciones lineales</h6>
+
+          <p>Un <strong>sistema de ecuaciones lineales</strong> es una colección de 2 o más ecuaciones lineales con las mismas variables. Por ejemplo:</p>
+
+          <p class="text-center"><ng-katex [equation]="'\\begin{cases} 2x-y=4 \\\\ 3x+2y=13 \\end{cases}'"></ng-katex></p>
+
+          <p>Para resolver un sistema de ecuaciones tenemos que encontrar el valor de cada una de las variables que la componen (en este caso la <ng-katex [equation]="'  x '"></ng-katex> y la <ng-katex [equation]="'y'"></ng-katex> ). Para ello existen principalmente dos métodos:</p>
+
+          <ul>
+              <li> <b>El método de reducción o eliminación</b>.
+                <ol>
+                    <li>
+                        Elegir una incógnita a eliminar.
+                        <p class="text-center">
+                            <ng-katex [equation]="' x '"></ng-katex>
+                        </p>
+                    </li>
+                    <li>
+                        Multiplicar la primera ecuación por el coeficiente de la incógnita a eliminar de la segunda ecuación.
+                        <p class="text-center">
+                            <ng-katex [equation]="'\\begin{aligned} 3(2x-y&=&4) \\\\ 6x-3y&=&12 \\end{aligned}'"></ng-katex>
+                        </p>
+                    </li>
+                    <li>
+                        Multiplicar la segunda ecuación por el coeficiente de la incógnita a eliminar de la primera ecuación con el signo contrario.
+                        <p class="text-center">
+                            <ng-katex [equation]="'\\begin{aligned} -2(3x+2y&=&13) \\\\ -6x-4y&=&-26 \\end{aligned}'"></ng-katex>
+                        </p>
+                    </li>
+                    <li>
+                        Sumar las ecuaciones resultantes del paso 2 y 3.
+                        <p class="text-center">
+                            <ng-katex [equation]="' \\begin{aligned} 6x-3y &=& +12 \\\\ -6x-4y &=& -26 \\\\ \\hline -7y &=& - 14 \\end{aligned} '"></ng-katex>
+                        </p>
+                    </li>
+                    <li>
+                        Resolver la ecuacion resultante para la incógnita que queda.
+                        <p class="text-center">
+                            <ng-katex [equation]="'
+                            \\begin{aligned}-7y &=& -14 \\\\
+                            y &=& \\frac{-14}{-7} \\\\
+                            y &=& 2 \\end{aligned}'"></ng-katex> 
+
+                        </p>
+                    </li>
+                    <li>Sustituir el resultado en una de las ecuaciones lineales iniciales y resolver la ecuación resultante</li>
+                    <p class="text-center">
+                        <ng-katex [equation]="'\\begin{aligned} 2x-y &=&4 \\\\ 2x-2 &=& 4 \\\\ 2x &=& 4+2 \\\\ x &=& \frac{6}{2} \\\\ x &=& 3 \\end{aligned}'"></ng-katex>
+
+                    </p>
+                </ol>
+                Resultado:
+                <p class="text-center">
+                    <ng-katex [equation]="' \\begin{aligned} x=3 \\\\ y=2 \\end{aligned} '"></ng-katex>
+                </p>
+
+              </li>
+
+              <li> <b>El método de sustitución</b>
+                <ol>
+                    <li>
+                        Elegir una incógnita a despejar.
+                        <p class="text-center">
+                            <ng-katex [equation]="' x '"></ng-katex>
+                        </p>
+                    </li>
+                    <li>
+                        Despejar la incógnita elegida de la primera ecuación.
+                        <p class="text-center">
+                            <ng-katex [equation]="'\\begin{aligned}2x-y &=& 4 \\\\ 2x &=& 4+y \\\\ x &=& \\frac{4+y}{2} \\end{aligned}'"></ng-katex>
+                        </p>
+                    </li>
+                    <li>
+                        Sustitutir el despeje resultante en la segunda eucación.
+                        <p class="text-center">
+                            <ng-katex [equation]="'\\begin{aligned} 3x+2y &=& 13 \\\\ 3(\\frac{4+y}{2})+2y &=& 13 \\end{aligned}'"></ng-katex>
+                        </p>
+                    </li>
+                    <li>
+                        Resolver la ecuación resultante.
+                        <p class="text-center">
+                            <ng-katex [equation]="'\\begin{aligned}3(\\frac{4+y}{2})+2y &=& 13 \\\\ \\frac{12+3y}{2}+2y &=& 13 \\\\ 12+3y+4y &=& 26 \\\\ 7y &=& 14 \\\\ y &=& \\frac{14}{7} \\\\ y &=& 2 \\end{aligned}'"></ng-katex>
+                        </p>
+                    </li>
+                    <li>
+                        Sustituir el resultado en el despeje que se hizo en el paso 2.
+                        <p class="text-center">
+                            <ng-katex [equation]="'\\begin{aligned} x &=& \\frac{4+y}{2} \\\\ x &=& \\frac{4+2}{2} \\\\ x &=& \\frac{6}{2} \\\\ x &=& 3 \\end{aligned}'"></ng-katex>
+                        </p>
+                    </li>
+                </ol>
+                Resultado:
+                <p class="text-center">
+                    <ng-katex [equation]="' \\begin{aligned} x=3 \\\\ y=2 \\end{aligned} '"></ng-katex>
+                </p>
+              </li>
+          </ul>
+        </div>
+        </div>
+
+
+        <p>Ahora que ya sabemos como resolver sistemas de ecuciones regresemos al problema anterior, éste decía así:</p>
+
+        <div class="alert alert-success">
+            <p> <b>Problema:</b> ¿Cuál es el número de conejos y gallinas en un corral si en su conjunto hacen un total de 15 cabezas y 40 patas?</p>
+        </div>
+
+        <p>De forma general, lo que vamos a hacer es definir una variable por cada elemento (en este caso gallinas y conejos), construir dos ecuaciones usando éstas variables y el resto de los datos del problema (por ejemplo el hecho de que las gallinas tienen 2 patas y los conejos 4 y que ambos solo tienen una cabeza) y finalmente resolver el sistema de ecuaciones resultante.</p>
+
+        <div class="alert alert-success">
+            <b>Resolución</b>
+            <ol>
+                <li>
+                    <b>Datos</b>
+                    <ul>
+                        <li>c = númeo de conejos</li>
+                        <li>g = número gallinas</li>
+                        <li>los conejos tienen 4 patas</li>
+                        <li>los conejos tienen 1 cabeza</li>
+                        <li>las gallinas tienen 2 patas</li>
+                        <li>las gallinas tienen 1 cabeza</li>
+                        <li>tenemos un total de 15 cabezas en el corral </li>
+                        <li>tenemos un total de 40 patas en el corral</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Procedimiento</b>
+                    <p>Construimos dos ecuaciones usando los datos:</p>
+                    <ol>
+                        <li>
+                            <b>Primera ecuación</b>
+                            <p>Como hay un total de 40 patas y los conejos (c) tienen 4 patas y las gallinas (g) tienen 2, tenemos que:</p>
+                           <ng-katex [equation]="' 4c+2g=40 '"></ng-katex>
+                        </li>
+                        <li>
+                            <b>Segunda ecuacion</b>
+                            <p>Como hay un total de 15 cabezas y cada animal solo tiene 1 cabeza, tenemos que:</p>
+                           <ng-katex [equation]="' c+g=15 '"></ng-katex>
+                        </li>
+                    </ol>
+                    <p>Estas dos ecuaciones forman nuestro sistema de ecuaciones lineales y lo resolvemos (en este caso por el método de sustitución):</p>
+                    <ol>
+                        <li>Elegimos <ng-katex [equation]="' c '"></ng-katex> para despejar</li>
+                        <li>Despejamos <ng-katex [equation]="' c '"></ng-katex> de alguna de las ecuaciones</li>
+<p class="text-center">
+    <ng-katex [equation]="'\\begin{aligned} c+g&=&30 \\\\ c&=&15-g \\end{aligned}'"></ng-katex>
+</p>
+
+                        <li>Sustituimos el despeje en la otra ecuación</li>
+                        <p class="text-center">
+                            <ng-katex [equation]="'\\begin{aligned}4c+2g &=& 40 \\\\ 4(15-g)+2g &=& 40 \\end{aligned}'"></ng-katex>
+                        </p>
+                        <li>Resolvemos la ecuación resultante:</li>
+                        <p class="text-center">
+                            <ng-katex [equation]="'\\begin{aligned} 4(15-g)+2g &=& 40 \\\\ 60-4g+2g &=& 40 \\\\ -4g+2g &=& 40-60 \\\\ -2g &=& -20 \\\\ g &=& \\frac{-20}{-2} \\\\ g &=& 10 \\end{aligned}'"></ng-katex>
+                        </p>
+                        <li>Sustituimos este resultado en el despeje del paso 2</li>
+                        <p class="text-center">
+                           <ng-katex [equation]="'\\begin{aligned}c &=& 15-g \\\\ c &=& 15-10 \\\\ c &=& 5 \\end{aligned}'"></ng-katex>
+                        </p>
+                    </ol>
+                </li>
+                <li>
+                    <b>Resultado</b>
+                    <p>Tenemos 5 conejos y 10 gallinas.</p>
+                </li>
+            </ol>
+
+        </div>
+
+        <h4>Fin</h4>
+        <p>Eso fue todo. También estos fueron todos los temas que vamos a revisar de Álgebra, la siguiente sesión empezaremos a repasar los temas de Geometría. ¡Yupi! Ahora hay que hacer ejercicios.</p>
+
+    <div class="alert alert-danger">
+      <h5><fa-icon [icon]="faBook"></fa-icon> Instrucciones:</h5>
+            <p><b>Instrucciones:</b> </p>
+            <p>Regresa a <i>Google Classroom</i> y contesta los ejercicios de esta sesión. Y entrega lo que se pide. Puedes poner <a href="https://www.youtube.com/watch?v=989-7xsRLR4">este hitazo</a> mientras haces tus ejericios.</p>
+        </div>
+
+        <div class="alert alert-warning">
+      <h5><fa-icon [icon]="faExclTri"></fa-icon> Aviso:</h5>
+          Para complementar lo que viste en esta sesión <strong>revisa tu Guía</strong>. Los temas que debes revisar están en las páginas 101 a 107.
+        </div>
+
+

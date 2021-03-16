@@ -1,1 +1,78 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    font-family: 'Roboto', sans-serif !important;
+}
+
+:root{
+    --color1: #386B73;
+    --color2: #83A1A6;
+    --color3: rgb(228, 228, 228);
+}
+
+
+
+h4 {
+    background-color: black;
+    color: white; 
+    padding: 0.3rem;
+    display: inline-block;
+    box-shadow: 5px 5px var(--color3);
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bree Serif', serif;
+}
+
+h3{
+    font-size: 2rem !important;
+}
+
+h2,h3,h4{
+    margin: 2rem 0  !important;
+}
+
+h6 {
+    text-decoration: underline;
+}
+
+
+fa-icon {
+    display: inline-block;
+    margin-right: 1rem;
+}
+
+.title{
+    text-shadow: 3px 3px var(--color3);
+}
+
+.alert h5 {
+    margin-bottom: 15px  !important;
+    opacity: 0.75;
+}
+
+.navbar  {
+    font-family: 'Bree Serif', serif;
+}
+
+footer {
+    font-family: 'Bree Serif', serif;
+    padding: 3rem;
+    color: white;
+}
+
+.imagen {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 1rem auto;
+}
+
+.copiar{
+    font-family: 'Kalam', cursive;
+}
