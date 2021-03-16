@@ -115,7 +115,7 @@
                     </li>
                     <li>Sustituir el resultado en una de las ecuaciones lineales iniciales y resolver la ecuación resultante</li>
                     <p class="text-center">
-                        <ng-katex [equation]="'\\begin{aligned} 2x-y &=&4 \\\\ 2x-2 &=& 4 \\\\ 2x &=& 4+2 \\\\ x &=& \frac{6}{2} \\\\ x &=& 3 \\end{aligned}'"></ng-katex>
+                        <ng-katex [equation]="'\\begin{aligned} 2x-y &=&4 \\\\ 2x-2 &=& 4 \\\\ 2x &=& 4+2 \\\\ x &=& \\frac{6}{2} \\\\ x &=& 3 \\end{aligned}'"></ng-katex>
 
                     </p>
                 </ol>
@@ -200,12 +200,16 @@
                         <li>
                             <b>Primera ecuación</b>
                             <p>Como hay un total de 40 patas y los conejos (c) tienen 4 patas y las gallinas (g) tienen 2, tenemos que:</p>
-                           <ng-katex [equation]="' 4c+2g=40 '"></ng-katex>
+                            <p class="text-center">
+                                <ng-katex [equation]="' 4c+2g=40 '"></ng-katex>
+                            </p>
                         </li>
                         <li>
                             <b>Segunda ecuacion</b>
                             <p>Como hay un total de 15 cabezas y cada animal solo tiene 1 cabeza, tenemos que:</p>
-                           <ng-katex [equation]="' c+g=15 '"></ng-katex>
+                            <p class="text-center">
+                                <ng-katex [equation]="' c+g=15 '"></ng-katex>
+                            </p>
                         </li>
                     </ol>
                     <p>Estas dos ecuaciones forman nuestro sistema de ecuaciones lineales y lo resolvemos (en este caso por el método de sustitución):</p>
