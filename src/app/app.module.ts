@@ -10,6 +10,8 @@ import { Sesion05Component } from './componentes/paginas/sesion05/sesion05.compo
 import { FooterComponent } from './componentes/shared/footer/footer.component';
 import { Sesion06Component } from './componentes/paginas/sesion06/sesion06.component';
 import { Sesion07Component } from './componentes/paginas/sesion07/sesion07.component';
+import { InicioComponent } from './componentes/paginas/inicio/inicio.component';
+import { PageNotFoundComponent } from './componentes/paginas/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { Sesion07Component } from './componentes/paginas/sesion07/sesion07.compo
     Sesion05Component,
     FooterComponent,
     Sesion06Component,
-    Sesion07Component
+    Sesion07Component,
+    InicioComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
